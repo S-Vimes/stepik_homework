@@ -1,0 +1,449 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-italic - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-500italic - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-500italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.wrapper {
+    max-width: 1219px;
+    margin: 0 auto;
+    padding-left: 55px;
+    padding-right: 65px;
+}
+
+/* Header styles start*/
+
+.header {
+    background-color: #007765;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.header__wrapper {
+    height: 84px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*.header__logo {
+
+}*/
+
+/*.navigation {
+
+}*/
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list__item {
+    display: inline;
+}
+
+.list__item:after {
+    content: " | ";
+    padding: 0 10px;
+    color: #fff;
+}
+
+.list__item:last-child:after {
+    content: "";
+}
+
+.link {
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Header styles end*/
+
+/*.main {
+
+}*/
+
+.heading {
+    background: url(../img/green-bg.png) no-repeat center;
+    background-size: cover;
+    margin-top: 84px;
+    padding-top: 160px;
+    min-height: 403px;
+}
+
+.heading__text {
+    color: white;
+    font-size: 72px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.heading__green {
+    font-size: 64px;
+    color: #007765;
+    text-align: center;
+    padding-top: 54px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.regular__text {
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    line-height: 36.5px;
+}
+
+.regular__text:last-child {
+    padding-bottom: 92px;
+}
+
+.e-background {
+    background-color: #eee;
+
+}
+
+.blue-background {
+    background: url(../img/blue-bg.png);
+    background-size: cover;
+}
+
+.blue-background__text {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 48px;
+    color: white;
+    max-width: 1219px;
+    padding: 129px 108px 130px 108px;
+    text-align: center;
+    line-height: 56.25px;
+}
+
+.ppc-logo {
+    float: left;
+    padding-right: 45px;
+}
+
+.team-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 283px;
+}
+
+.name {
+    color: #007765;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.post {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.black-background {
+    background-color: #333333;
+}
+
+.footer {
+    font-size: 18px;
+    max-width: 540px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 48px;
+    padding-bottom: 64px;
+}
+
+/*body {
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 84px;
+    background-color: #007765;
+    position: fixed;
+}
+
+.navigation {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.headerbox {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.jumbotron {
+    background-image: url(../images/green-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin-top: 84px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1219px;
+    padding-left: 55px;
+    padding-right: 54px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.padding {
+    padding-top: 48px;
+    padding-bottom: 92px;
+}
+
+.team-padding {
+    padding-top: 58px;
+    padding-bottom: 58px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 72px;
+    text-align: center;
+    max-width: 1219px;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 64px;
+    color: #007765;
+    text-align: center;
+}
+
+.container > p {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: 400;
+}
+
+.container b {
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url(../images/blue-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.e-background {
+    background-color: #eeeeee;
+    width: 100%;
+}
+
+.black-background {
+    background-color: #333333;
+    width: 100%;
+}
+
+div {
+    display: block;
+}
+
+section {
+    display: block;
+}
+
+.ppc-logo {
+    float: left;
+    padding: 20px;
+}
+
+.speech {
+    font-size: 48px;
+    font-style: italic;
+    max-width: 893px;
+    color: #ffffff;
+    text-align: center;
+    padding: 128px 163px 128px 163px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+}
+
+.name {
+    color: #007765;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.post {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.team-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 283px;
+}
+
+.footer {
+    font-size: 0.5625em;
+    width: 100%;
+    max-width: 540px;
+    height: 126px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+*/
